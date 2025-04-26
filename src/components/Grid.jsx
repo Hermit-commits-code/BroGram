@@ -16,7 +16,7 @@ export default function Grid() {
 
         const trainingPlan = training_plan[workout];
         if (workoutIndex === selectedWorkout) {
-          return <WorkoutCard key={workoutIndex} />;
+          return <WorkoutCard key={workoutIndex} trainingPlan={trainingPlan} type={type} workoutIndex={workoutIndex} />;
         }
         return (
           <button
